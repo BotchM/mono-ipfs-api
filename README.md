@@ -1,5 +1,9 @@
 # Fleek Demo
 This is the demo for the assignment, I will include a short video with a walk through. Let me know if something comes up.
+
+## A video demo of a walkthrough - instructions below
+[IPFS LINK TO DEMO VIDEO](https://ipfs.io/ipfs/QmZpiePBXMz4efejr72jBAJ2Ygrwq7bn2dcNUfbkDnzgq6)
+
 ## Tech
 
 - [React] - Used React to build the frontend
