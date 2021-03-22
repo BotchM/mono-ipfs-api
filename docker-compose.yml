@@ -1,0 +1,25 @@
+version: "3"
+services:
+    web-app:
+        container_name: web-app
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000"
+        restart: on-failure
+        volumes:
+            - ./client:/usr/app
+            - /usr/app/node_modules
+    proxy-api:
+        container_name: proxy-api
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        restart: on-failure
+        env_file: ./server/.env
+        volumes:
+            - ./server:/usr/app
+            - /usr/app/node_modules
